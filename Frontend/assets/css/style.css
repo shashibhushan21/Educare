@@ -3656,15 +3656,21 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
 }
 
 .destination-single-item {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #e4e4e4;
+  /* background: rgba(176, 202, 238, 0.1); */
+  background: #045d5d3f;
+  border: 1px solid #045d5d8a;
   border-radius: 20px;
   display: block;
   padding: 30px 25px;
   margin-bottom: 30px;
-  width: calc(14.2857142857% - 20px);
+  margin-right: 5px;
+  width: calc(14.2857142857% - 63px);
+  /* width: calc(13.8% - 55px); */
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  align-items: center;
 }
 .destination-single-item:hover {
   background: #fff;
