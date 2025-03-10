@@ -76,12 +76,14 @@
                 <div class="collapse navbar-collapse" id="themeim_main_menu">
                   <ul class="navbar-nav">
                     <li class="menu-item-has-children current-menu-item">
-                      <a href="index.html"
-                        style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
-                        onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
-                        onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
-                        Home
-                      </a>
+                        <li>
+                            <a href="index.html"
+                                style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+                                onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+                                onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+                                Home
+                              </a>
+                          </li>
                     </li>
     
                     <li>
@@ -194,6 +196,19 @@
             </nav>
           </div>
         <!-- nav area end here -->
+
+  <style>
+    .row {
+  /* --bs-gutter-x: 1.5rem; */
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+  </style>
 
         <!-- about page start here  -->
         <div class="contact-us-wrapper single-page-section-top-space single-page-section-bottom-space">
