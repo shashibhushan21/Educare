@@ -580,6 +580,7 @@
 #fall-section:hover,
 #winter-section:hover {
   transform: translateY(-5px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
 #spring-section h2,
@@ -632,5 +633,122 @@
   #fall-section,
   #winter-section {
       padding: 1rem;
+  }
+}
+
+
+/* --------------Food---------------- */
+.food {
+  min-height: 450px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#food-content h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--main-color-one);
+  padding: 1rem 0;
+}
+
+#food-container {
+  padding: 0 2rem;
+}
+
+#food-container p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--paragraph-color);
+  text-align: center;
+}
+
+#food-bottom {
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+#food-left {
+  width: 50%;
+  padding: 1rem;
+}
+
+#food-left h3 {
+  font-size: 20px;
+  color: var(--main-color-one);
+  font-weight: 500;
+  margin: 1rem 0 0.5rem;
+}
+
+#food-left p {
+  font-size: 16px;
+  color: var(--paragraph-color);
+  font-weight: 500;
+}
+
+#food-right {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#food-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  #food-bottom {
+      flex-direction: column;
+      padding: 0 1rem;
+      min-height: auto;
+  }
+
+  #food-left {
+      width: 100%;
+      padding: 0.5rem;
+  }
+
+  #food-right {
+      width: 100%;
+      padding: 0.5rem;
+  }
+
+  #food-right img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+  }
+
+  #food-container {
+      padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #food-content h2 {
+      font-size: 24px;
+  }
+
+  #food-container p {
+      font-size: 14px;
+  }
+
+  #food-left h3 {
+      font-size: 18px;
+  }
+
+  #food-left p {
+      font-size: 14px;
   }
 }
