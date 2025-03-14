@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --main-color-one: #045D5D;
+    --heading-color: #1e1926;
+    --paragraph-color: #6b6b6b;
+    --heading-font: "Sora", sans-serif;
+    --body-font: "Poppins", sans-serif;
+    --animate-delay: 0.3s;
+  }
+  
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    overflow-x: hidden;
+    font-family: var(--body-font);
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    -moz-osx-font-smoothing: grayscale;
+    /* Firefox */
+    -webkit-font-smoothing: antialiased;
+    /* WebKit  */
+  }
+  
+  body {
+    margin: 0;
+    color: var(--heading-color);
+    font-family: var(--body-font);
+    font-size: 14px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(125deg, #ffc44e 0%, #764af1 100%);
+    border-radius: 10px;
+  }
+
+  .main{
+    min-height: 100%;
+    width: 100%;
+    
+    
+  }
+  #hero{
+    height: 50vh;
+    width: 100%;
+    background: var(--paragraph-color);
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.6)),
+     url(https://s-i.huffpost.com/gen/3991424/images/o-DOCTOR-facebook.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+  }
+  #hero-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #dcdcf3;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-shadow: 1px 1px 1px #2c2b2b,
+    1px 2px 1px #2c2b2b,
+    1px 3px 1px #2c2b2b,
+    1px 4px 1px #2c2b2b,
+1px 18px 6px rgba(16,16,16,0.4),
+1px 22px 10px rgba(16,16,16,0.2),
+1px 25px 35px rgba(16,16,16,0.2),
+1px 30px 60px rgba(16,16,16,0.4);
+  }
+
+  @media (max-width:900px){
+    #hero-content{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%)
+      }
+      #hero-content h1{
+        font-size: 50px;
+        font-weight: 700;
+        color: #dcdcf3;
+        text-transform: uppercase;
+        white-space: wrap;
+        text-align: center;
+      }
+  }
+
+
+  /* ---------------top-study------------------ */
+
+
+  #top-study{
+    min-height: 40vh;
+    width: 100%;
+    padding: 0 4vw;
+    /* background-color : #f7f7f7 */
+  }
+  #top-study h1{
+    font-size: 30px;
+    font-weight:700;
+    color: var(--paragraph-color);
+    margin-top: 10px;
+  }
+  #top-study-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #000;
+    border-radius: 10px;
+    min-height: 30vh;
+    padding: 0 15px;
+    
+  }
+  #tip-study1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #tip-study1 img{
+    object-fit: cover;
+    object-position: center;
+    height: 100px;
+    width: 100px;
+    /* border-radius: 50%; */
+    background-color: transparent;
+  }
+  #tip-study1 h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+  }
+
+
+  @media (max-width:900px) {
+    #top-study{
+        min-height: 40vh;
+        width: 100%;
+        padding: 0 4vw;
+        /* background-color : #f7f7f7 */
+      }
+    #top-study-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        min-height: 30vh;
+        padding-top: 15px;
+        
+      }
+  }
+
+
+  /* ---------------about------------------ */
+  
+
+  .about-georgia{
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+
+  #main-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#main-container h1 {
+    text-align: center;
+    color: var(--main-color-one);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+#content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#left-div, #right-div {
+    flex: 1;
+    min-width: 300px;
+}
+
+#left-div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#left-div h2 {
+    color: #555;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Added margin to separate from See More */
+}
+
+#see-more {
+    display: block;
+    text-align: center;
+    color: var(--main-color-one);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+#see-more:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#right-div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#application-form h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#application-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#application-form input, 
+#application-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#application-form input:focus, 
+#application-form select:focus {
+    border-color: #033f3f;
+    outline: none;
+    border: 2px solid var(--main-color-one);
+}
+
+#apply-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--main-color-one);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+}
+
+#apply-btn:hover {
+    background-color:#033f3f ;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    #content-wrapper {
+        flex-direction: column;
+    }
+
+    #left-div, #right-div {
+        min-width: 100%;
+    }
+
+    #main-container h1 {
+        font-size: 2rem;
+    }
+
+    #left-div h2 {
+        font-size: 1.3rem;
+    }
+
+    #application-form h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #main-container {
+        padding: 10px;
+    }
+
+    #main-container h1 {
+        font-size: 1.8rem;
+    }
+
+    #left-div h2 {
+        font-size: 1.2rem;
+    }
+
+    #application-form h2 {
+        font-size: 1.3rem;
+    }
+
+    #apply-btn {
+        font-size: 1rem;
+    }
+
+    #see-more {
+        font-size: 1rem;
+    }
+}
+
+
+/* ------------Facts--------------- */
+
+
+#georgia-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#facts-section, #eligibility-section {
+  flex: 1;
+  min-width: 300px;
+  background-color: #045d5d18;
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+#facts-section h1, #eligibility-section h1 {
+  color: var(--main-color-one);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#flag-image {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+#quick-facts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#quick-facts-table th, #quick-facts-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#quick-facts-table th {
+  /* background-color: #007BFF; */
+  color: var(--paragraph-color);
+  font-weight: bold;
+}
+
+#quick-facts-table td {
+  color: #555;
+}
+
+#facts-section h2 {
+  color: var(--main-color-one);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#university-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#university-list li {
+  margin-bottom: 10px;
+}
+
+#eligibility-section h2 {
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+#eligibility-section h3 {
+  color: #121;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+#eligibility-section h4 {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+#info-image {
+  display: block;
+  width: 100%;
+  max-width: 180px; /* Reduced size for better fit */
+  margin: 20px auto 0;
+  background-color: transparent; /* Transparent background */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #info-wrapper {
+      flex-direction: column;
+  }
+
+  #facts-section, #eligibility-section {
+      min-width: 100%;
+  }
+
+  #facts-section h1, #eligibility-section h1 {
+      font-size: 1.8rem;
+  }
+
+  #flag-image {
+      max-width: 150px;
+  }
+
+  #quick-facts-table th, #quick-facts-table td {
+      font-size: 0.9rem;
+  }
+
+  #facts-section h2 {
+      font-size: 1.3rem;
+  }
+  #facts-section h3 {
+    font-size: 1.2rem;
+}
+#facts-section h4{
+  font-size: 1rem;
+}
+
+  #university-list {
+      font-size: 1rem;
+  }
+
+  #eligibility-section h2 {
+      font-size: 1.1rem;
+  }
+
+  #info-image {
+      max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  #georgia-container {
+      padding: 10px;
+  }
+
+  #facts-section h1, #eligibility-section h1 {
+      font-size: 1.5rem;
+  }
+
+  #flag-image {
+      max-width: 120px;
+  }
+
+  #quick-facts-table th, #quick-facts-table td {
+      font-size: 0.8rem;
+      padding: 8px;
+  }
+
+  #facts-section h2 {
+      font-size: 1.2rem;
+  }
+
+  #university-list {
+      font-size: 0.9rem;
+  }
+
+  #eligibility-section h2 {
+      font-size: 1rem;
+  }
+
+  #info-image {
+      max-width: 100px;
+  }
+}

@@ -64,3 +64,16 @@ for (let i = 0; i < imgBx.length; i++) {
 
 }
 DiffCountry();
+
+
+
+
+
+
+// shashi.js
+document.addEventListener("DOMContentLoaded", function() {
+    var element = document.querySelector('.some-element');
+    if (element) {
+      element.style.someProperty = 'someValue';
+    }
+  });

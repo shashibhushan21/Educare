@@ -1,117 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>ERUDITE EDUCARE LLC</title>
-        <!-- favicon -->
-        <link rel="icon" href="assets/img/favicon.png" sizes="20x20" type="image/png" />
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
-        <!-- animate -->
-        <link rel="stylesheet" href="assets/css/animate.css" />
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <!-- magnific popup -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-        <!-- Nice Select -->
-        <link rel="stylesheet" href="assets/css/nice-select.css" />
-        <!-- Odomiters css -->
-        <link rel="stylesheet" href="assets/css/odometer.css" />
-        <!-- fontawesome -->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-        <!-- Slick Slider -->
-        <link rel="stylesheet" href="assets/css/slick.css" />
-        <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <!-- Responsive Css -->
-        <link rel="stylesheet" href="assets/css/responsive.css" />
-        <!-- Shashi Css -->
-        <link rel="stylesheet" href="assets/css/shashi.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-      </head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ERUDITE EDUCARE LLC</title>
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/favicon.png" sizes="20x20" type="image/png" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <!-- Odomiters css -->
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Shashi Css -->
+    <link rel="stylesheet" href="assets/css/shashi.css" />
+ <!-- Georgia Css -->
+  <link rel="stylesheet" href="assets/css/georgia.css">
+  </head>
+  <!-- Developed by Shashi Bhushan Kumar -->
 <body>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+     <!-- preloader area start -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="loader"></div>
+    </div>
+  </div>
+  <!-- preloader area end -->
+
+  <!--  search Popup start -->
+  <div class="body-overlay" id="body-overlay"></div>
+  <div class="search-popup" id="search-popup">
+    <form action="index.html" class="search-form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search....." />
+      </div>
+      <button class="close-btn border-none">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </div>
+  <!-- Search Popup End -->
+
+
+  <div class="page-wrapper">
+    <div class="nav-area-wrapper-relative">
+        <nav class="navbar navbar-area navbar-expand-lg navigation-style-02">
+          <div class="container custom-container custom-container-01">
+            <div class="responsive-menu">
+              <div class="logo-wrapper">
+                <a href="index.html" class="logo">
+                  <img src="assets/img/Logos/logo-black.svg" alt="" />
+                </a>
+              </div>
+              <button class="navbar-toggler navbar-bs-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#themeim_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="themeim_main_menu">
+              <ul class="navbar-nav">
+                <li class="menu-item-has-children current-menu-item">
+                  <li>
+                    <a href="index.html"
+                        style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+                        onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+                        onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+                        Home
+                      </a>
+                  </li>
+                </li>
+
+                <li>
+                  <a href="about-us.html"
+                    style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+                    onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+                    onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+                    About Us
+                  </a>
+                </li>
+
+
+
+                <li class="menu-item-has-children">
+
+                  <a href="#"
+                    style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+                    onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+                    onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+                    study abroad
+                  </a>
+                  <!-- <a href="#">Pages</a> -->
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="all-course-widget.html">Georgia Page</a>
+                    </li>
+                    <li><a href="our-team.html">Team</a></li>
+                    <li><a href="instructors.html">Instructors</a></li>
+                    <li>
+                      <a href="about-instructor.html">About Instructor</a>
+                    </li>
+                    <li><a href="country-details.html">Country Details</a></li>
+                    <li><a href="all-course.html">All Course</a></li>
+                    <li><a href="course-details.html">Course Details</a></li>
+                    <li><a href="apply-online.html">Apply Online</a></li>
+                    <li><a href="shop-cart.html">Shop Cart</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="404.html">404</a></li>
+                    <li><a href="cart-empty.html">Cart Empty</a></li>
+                  </ul>
+                </li>
+
+                <li class="menu-item-has-children">
+                  <a href="#"
+                    style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+                    onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+                    onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+                    Blog
+                  </a>
+                  <ul class="sub-menu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog-classic.html">Blog Classic</a></li>
+                    <li><a href="blog-details.html">Blog Single</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#"
+                    style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+                    onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+                    onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+                    gallery
+                  </a>
+                </li>
+
+                <li>
+                  <a href="contact-us.html"
+                    style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+                    onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+                    onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+                    Contact Us
+                  </a>
+                </li>
+
+                <li>
+                  <a href="login.html"
+                    style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+                    onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+                    onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+                    Login
+                  </a>
+                </li>
+
+
+              </ul>
+            </div>
+            <div class="nav-right-content">
+              <!-- <div class="icon-part">
+                <ul>
+                  <li id="search">
+                    <a href="#"><img src="assets/img/icon/search-icon.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div> -->
+              <div class="btn-wrap">
+                <!-- <a href="apply-online.html" class="btn-common nav-btn" style="padding: 20px 10px;">Live Counselling</a> -->
+                <a href="apply-online.html" class="btn-common nav-btn"
+                  style="padding: 20px 10px; transition: all 0.3s ease; background-color: #f39c12 !important"
+                  onmouseover="this.style.backgroundColor='orange'; this.style.border='1px solid white';"
+                  onmouseout="this.style.backgroundColor='#f39c12'; this.style.border='';">
+                  Live Counselling
+                </a>
+
+              </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        </nav>
       </div>
 
 
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card with stretched links</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">
-            <a href="#" class="stretched-link text-danger" style="position: relative;">Stretched link will not work here, because <code>position: relative</code> is added to the link</a>
-          </p>
-          <p class="card-text bg-light" style="transform: rotate(0);">
-            This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.
-          </p>
+      <section class="main">
+        <div id="hero">
+            <div id="hero-content">
+                <h1>TOP Universitie in GEORGIA </h1>
+                <!-- <h2>shashi</h2> -->
+            </div>    
         </div>
+
+        <div id="top-study">
+            <h1>TOP Study</h1>
+            <div id="top-study-content">
+                <div id="tip-study1">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/13715/13715853.png" alt=""></a>
+                    <h2>MBBS</h2>
+                </div>
+
+                <div id="tip-study1">
+                    <a href="#"><img src="https://cdn-icons-gif.flaticon.com/13099/13099875.gif" alt=""></a>
+                    <h2>Pharmacy</h2>
+                </div>
+
+                <div id="tip-study1">
+                    <a href="#"><img src="https://cdn-icons-gif.flaticon.com/13470/13470941.gif" alt=""></a>
+                    <h2>Nursing</h2>
+                </div>
+
+                <div id="tip-study1">
+                    <a href="#"><img src="https://cdn-icons-gif.flaticon.com/11784/11784429.gif" alt=""></a>
+                    <h2>Computer Science</h2>
+                </div>
+
+                <div id="tip-study1">
+                    <a href="#"><img src="https://cdn-icons-gif.flaticon.com/15747/15747284.gif" alt=""></a>
+                    <h2>journalism</h2>
+                </div>
+            </div>
+        </div>
+
+
+       
+
+       <section class="about-georgia">
+        <div id="main-container">
+          <h1>About Georgia</h1>
+          <div id="content-wrapper">
+              <!-- Left Div with Text and See More Link -->
+              <div id="left-div">
+                  <h2>
+                      Georgia is a beautiful state in the USA.<br>
+                      It is known for its rich history and culture.<br>
+                      The capital of Georgia is Atlanta.<br>
+                      Georgia is famous for its peaches.<br>
+                      The state has stunning mountains and beaches.<br>
+                      Savannah is a historic city in Georgia.<br>
+                      Georgia is home to the Coca-Cola Museum.<br>
+                      The climate here is warm and humid.<br>
+                      Georgia has a vibrant music scene.<br>
+                      Explore the beauty of Georgia today!
+                  </h2>
+                  <a href="#" id="see-more">See More</a>
+              </div>
+              <!-- Right Div with Form -->
+              <div id="right-div">
+                  <form id="application-form">
+                      <h2>Apply Now</h2>
+                      <label for="name">Enter Full Name:</label>
+                      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+                      <label for="phone">Phone Number:</label>
+                      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      
+                      <label for="email">Enter Email:</label>
+                      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+                      <label for="city">Select City:</label>
+                      <select id="city" name="city" required>
+                          <option value="">-- Select a City --</option>
+                          <option value="atlanta">Atlanta</option>
+                          <option value="savannah">Savannah</option>
+                          <option value="augusta">Augusta</option>
+                          <option value="macon">Macon</option>
+                      </select>
+      
+                      <button type="submit" id="apply-btn">Apply Now</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+       </section>
+
+
+
+
+       <section>
+        <div id="georgia-container">
+          <div id="info-wrapper">
+              <!-- Left Div: Georgia Quick Facts -->
+              <div id="facts-section">
+                  <h1>Georgia Quick Facts</h1>
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg" alt="Georgia Flag" id="flag-image">
+                  <table id="quick-facts-table">
+                      <tr>
+                          <th>Capital</th>
+                          <td>Atlanta</td>
+                      </tr>
+                      <tr>
+                          <th>Population</th>
+                          <td>10.7 million (approx.)</td>
+                      </tr>
+                      <tr>
+                          <th>Currency</th>
+                          <td>US Dollar (USD)</td>
+                      </tr>
+                      <tr>
+                          <th>Time Zone</th>
+                          <td>Eastern Time Zone (UTC-5)</td>
+                      </tr>
+                      <tr>
+                          <th>Driving Side</th>
+                          <td>Right</td>
+                      </tr>
+                      <tr>
+                          <th>Calling Code</th>
+                          <td>+1</td>
+                      </tr>
+                      <tr>
+                          <th>Internet TLD</th>
+                          <td>.us</td>
+                      </tr>
+                  </table>
+                  <h2>Top MBBS Universities</h2>
+                  <ul id="university-list">
+                      <li>Emory University School of Medicine</li>
+                      <li>Medical College of Georgia</li>
+                      <li>Mercer University School of Medicine</li>
+                      <li>Morehouse School of Medicine</li>
+                  </ul>
+              </div>
+              <!-- Right Div: Eligibility & Other Stuff -->
+              <div id="eligibility-section">
+                  <h1>Eligibility & Other Stuff</h1>
+                  <h2>Require document for registration</h2>
+                  <h2>One set of photocopies of marks sheet of 10+2</h2>
+                  <h2>A valid Passport (If you have)</h2>
+                  <h2>2 Photographs size 3*4 cm</h2>
+                  <h2>ELIGIBILITY: 12th Science/A level PCB (Physics, Chemistry, Biology)</h2>
+                  <h2>Duration: 5/6 Years</h2>
+                  <h2>Holiday: July & August</h2>
+                  <h3>Application for semmester One 2025</h3>
+                  <h4>Open on 1 May 2025</h4>
+                  <h4>Close December 2025</h4>
+                  <img src="https://cdn-icons-png.flaticon.com/512/2785/2785482.png" alt="Medical Icon" id="info-image">
+              </div>
+          </div>
+      </div>
+       </section>
+
+
+       
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="all-course-wrapper single-page-section-top-space single-page-section-bottom-space">
+        <!-- breadcrumb area start here  -->
+        <div class="breadcrumb-wrap style-01">
+          <div class="container custom-container-01">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="breadcrumb-content">
+                  <h3 class="title">Top University in Georgia</h3>
+                  <p class="details">
+                    We have professional alliances with leading Universities and Colleges around the world.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- breadcrumb area end here  -->
+    
+        <!-- course area start here  -->
+        <section class="course-area-wrapper">
+          <div class="container custom-container-01">
+            <div class="row">
+              <div class="col-lg-4 col-xl-3">
+                <div class="widget-wrapper">
+                  <div class="single-widget-item">
+                    <h4 class="title">Select Stream</h4>
+                    <div class="form">
+                      <div class="form-element">
+                        <select name="" id="" style="display: none">
+                          <option disabled="" selected="" hidden="">
+                            Select
+                          </option>
+                          <option value="Canada">Medicine & Health</option>
+                          <option value="London">Hospitality & Sports</option>
+                          <option value="America">Engineering & Technology</option>
+                          <option value="London">Computer Science & IT</option>
+                          <option value="London">Agriculture & Forestry</option>
+                          <option value="London">Art, Design & Culture</option>
+                          <option value="London">Business & Management</option>
+                          <option value="London">Education & Training</option>
+                          <option value="London">Law</option>
+                          <option value="London">Journalism & Media</option>
+                          <option value="London">Humanities</option>
+                          <option value="London">Social Science</option>
+                          <option value="London">Environmental Studies</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="single-widget-item">
+                    <h4 class="title">Select Degree</h4>
+                    <div class="form">
+                      <div class="form-element">
+                        <select name="" id="" style="display: none">
+                          <option disabled="" selected="" hidden="">
+                            Select
+                          </option>
+                          <option value="Canada">Bachelor</option>
+                          <option value="America">Master</option>
+                          <option value="London">UG</option>
+                          <option value="London">Others</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="btn-wrap" style="margin-right: 10rem; margin-top: 7rem;">
+                    <a href="#" class="btn-common nav-btn" style="padding: 20px 10px; transition: all 0.3s ease; background-color: #f39c12;" onmouseout="this.style.backgroundColor='orange'; this.style.border='1px solid white';" onmouseover="this.style.backgroundColor=''; this.style.border='';">
+                      Apply
+                    </a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-8 col-xl-9">
+                <div class="row column-gap-50">
+                  <!-- Course items will be dynamically inserted here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- course area end here  -->
       </div>
 
 
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card with stretched links</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="card-text">
-            <a href="#" class="stretched-link text-danger" style="position: relative;">Stretched link will not work here, because <code>position: relative</code> is added to the link</a>
-          </p>
-          <p class="card-text bg-light" style="transform: rotate(0);">
-            This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.
-          </p>
-        </div>
-      </div>
 
-
-
-
-
-
-
-
-
-
-       <!-- back to top area start -->
-  <div class="back-to-top">
+  </div>
+  
+   <!-- back to top area start -->
+   <div class="back-to-top">
     <span class="back-top"><i class="fa fa-angle-up"></i></span>
   </div>
   <!-- back to top area end -->
@@ -139,5 +493,96 @@
   <!-- shashi js -->
   <script src="assets/js/shashi.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <script>
+    $(document).ready(function() {
+      $.getJSON('./data.json', function(data) {
+        var courseContainer = $('.course-area-wrapper .row.column-gap-50');
+        courseContainer.empty(); 
+
+        data.forEach(function(course) {
+          var courseItem = `
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+              <div class="single-course-item">
+                <div class="thumbnail zoom-in">
+                  <div class="background-image" style="background-image: url(${course.image});"></div>
+                </div>
+                <div class="contact">
+                  <p class="tag" style="color: #121; font-weight: 700; font-size: 17px;">${course.university}</p>
+                  <h5 class="title" style="font-size: 15px; color: #444; font-weight: 500;">
+                    <table>
+                      <tr>
+                        <td>University Type</td>
+                        <td>: ${course.type}</td>
+                      </tr>
+                      <tr>
+                        <td>University Grade</td>
+                        <td>: ${course.grade}</td>
+                      </tr>
+                      <tr>
+                        <td>Estd Year</td>
+                        <td>: ${course.estdYear}</td>
+                      </tr>
+                      <tr>
+                        <td>ECFMG</td>
+                        <td>: ${course.ecfmg}</td>
+                      </tr>
+                    </table>
+                  </h5>
+                </div>
+                <div class="hover-option" style="background: #f2d61c;">
+                  <div class="contact">
+                    <p class="tag" style="color: #121; font-weight: 700; font-size: 17px;">${course.university}</p>
+                    <h3 class="title">
+                      <a href="#">One of the top University of Georgia</a>
+                    </h3>
+                    <h5 class="title" style="font-size: 15px; color: #444; font-weight: 500;">
+                      <table>
+                        <tr>
+                          <td>Intake</td>
+                          <td style="white-space: nowrap;">: ${course.intake}</td>
+                        </tr>
+                        <tr>
+                          <td>Fees</td>
+                          <td>: ${course.fees}</td>
+                        </tr>
+                        <tr>
+                          <td>Medium</td>
+                          <td>: ${course.medium}</td>
+                        </tr>
+                        <tr>
+                          <td>Duration</td>
+                          <td>: ${course.duration}</td>
+                        </tr>
+                      </table>
+                    </h5>
+                    <p class="paragraph">
+                      We have professional alliances with leading Universities and Colleges around the world.
+                    </p>
+                    <div class="video-play-wrapper">
+                      <a class="video-play-btn mfp-iframe" style="height: 40px; width: 40px; text-align: center;" href="${course.video}">
+                        <svg width="14" height="20" viewBox="0 0 14 25" style="margin-bottom: 40px; margin-right: 5px;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.124 12.6362L0.364909 24.7606L0.36491 0.511875L13.124 12.6362Z" fill="white"></path>
+                        </svg>
+                      </a>
+                      <p class="text" style="font-size: 13px; color: #121; margin-right: 8px;">Watch Intro</p>
+                      <a href="index.html" style="color: #111; font-weight: 600; font-size: 14px; transition: color 0.3s ease;" onmouseover="this.style.color='#045D5D';" onmouseout="this.style.color='#111';">See More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          courseContainer.append(courseItem);
+        });
+
+       
+        $('.mfp-iframe').magnificPopup({
+          type: 'iframe'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
