@@ -526,3 +526,111 @@
       max-width: 100px;
   }
 }
+
+
+
+/* ---------------Climate--------- */
+
+ .climate {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+#main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.headercl {
+  background-color: var(--main-color-one);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(250, 249, 249, 0.257);
+  
+}
+
+.headercl h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#seasons-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+#spring-section,
+#summer-section,
+#fall-section,
+#winter-section {
+  background-color: #cde4f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+#spring-section:hover,
+#summer-section:hover,
+#fall-section:hover,
+#winter-section:hover {
+  transform: translateY(-5px);
+}
+
+#spring-section h2,
+#summer-section h2,
+#fall-section h2,
+#winter-section h2 {
+  color: #2c5d34;
+  margin-bottom: 1rem;
+}
+
+#spring-description,
+#summer-description,
+#fall-description,
+#winter-description {
+  margin: 1rem 0;
+}
+
+#spring-temperature,
+#summer-temperature,
+#fall-temperature,
+#winter-temperature {
+  font-style: italic;
+  color: #666;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  header h1 {
+      font-size: 2rem;
+  }
+
+  #seasons-layout {
+      grid-template-columns: 1fr;
+  }
+
+  #main-container {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  #spring-section,
+  #summer-section,
+  #fall-section,
+  #winter-section {
+      padding: 1rem;
+  }
+}
