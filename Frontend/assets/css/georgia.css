@@ -642,13 +642,15 @@
   min-height: 450px;
   width: 100%;
   margin: 10px 0;
+  background-color: white;
+
 }
 
 #food-content h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
+  font-size: 2.6rem;
   font-weight: 600;
   color: var(--main-color-one);
   padding: 1rem 0;
@@ -750,5 +752,239 @@
 
   #food-left p {
       font-size: 14px;
+  }
+}
+
+
+
+/* -------------------safety----------------- */
+
+
+.safety {
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: var(--accent-color);
+}
+
+.safety h2 {
+  text-align: center;
+  color: var(--main-color-one);
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+#safety-content {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+#safety-content a {
+  flex: 0 0 300px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: white;
+  border: 2px solid var(--main-color-one);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+  scroll-snap-align: start;
+}
+
+#safety-content a:hover {
+  background-color: #e8f0e8;
+}
+
+#safety-content a img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+#safety-content a h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--paragraph-color);
+  line-height: 1.4;
+}
+
+/* Scrollbar styling */
+#safety-content::-webkit-scrollbar {
+  height: 8px;
+}
+
+#safety-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#safety-content::-webkit-scrollbar-thumb {
+  background: var(--main-color-one);
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .safety {
+      padding: 1.5rem 0.5rem;
+  }
+
+  .safety h2 {
+      font-size: 2rem;
+  }
+
+  #safety-content {
+      flex-direction: column;
+      overflow-x: hidden;
+      padding: 0 1rem;
+  }
+
+  #safety-content a {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .safety h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+  }
+
+  #safety-content a {
+      padding: 0.8rem;
+  }
+
+  #safety-content a img {
+      width: 40px;
+      height: 40px;
+      margin-right: 0.8rem;
+  }
+
+  #safety-content a h3 {
+      font-size: 14px;
+  }
+}
+
+
+
+/* -----Why Study in Georgia-------- */
+
+
+#study-georgia-section {
+  width: 100%;
+  padding: 2rem;
+  /* background-color: var(--bg-color); */
+  background: var(--main-color-one);
+}
+
+#study-georgia-section h2 {
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#study-georgia-section > p {
+  text-align: center;
+  color: #d2cccc;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+#reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-box {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.5s ease;
+  transition: all ease-in-out 0.4s;
+}
+
+.benefit-box:hover {
+  transform: translateY(-5px);
+  background: #cde4f9;
+}
+
+.benefit-box img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+ 
+}
+
+.benefit-box p {
+  color: var(--text-color);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #study-georgia-section {
+      padding: 1.5rem;
+  }
+
+  #study-georgia-section h2 {
+      font-size: 2rem;
+  }
+
+  #study-georgia-section > p {
+      font-size: 1rem;
+  }
+
+  #reasons-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+  }
+
+  .benefit-box {
+      padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #study-georgia-section {
+      padding: 1rem;
+  }
+
+  #study-georgia-section h2 {
+      font-size: 1.5rem;
+  }
+
+  #study-georgia-section > p {
+      font-size: 0.9rem;
+  }
+
+  #reasons-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .benefit-box img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .benefit-box p {
+      font-size: 0.85rem;
   }
 }
