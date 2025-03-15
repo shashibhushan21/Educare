@@ -988,3 +988,187 @@
       font-size: 0.85rem;
   }
 }
+
+
+
+
+
+/* -----------------Services----------- */
+
+
+#main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f5f5f5; /* Added background color */
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#main-container > p {
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+#services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Common styling for all service boxes */
+#box1, #box2, #box3, #box4, #box5, #box6, 
+#box7, #box8, #box9, #box10, #box11, #box12 {
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  /* transition: all 0.3s ease; */
+  display: flex;
+  align-items: center;
+  min-height: 150px;
+  transition: all 0.4s ease-in-out;
+}
+
+#box1:hover, #box2:hover, #box3:hover, #box4:hover, 
+#box5:hover, #box6:hover, #box7:hover, #box8:hover, 
+#box9:hover, #box10:hover, #box11:hover, #box12:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+#box1 img, #box2 img, #box3 img, #box4 img, 
+#box5 img, #box6 img, #box7 img, #box8 img, 
+#box9 img, #box10 img, #box11 img, #box12 img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+/* Common styling for all content containers */
+#content1, #content2, #content3, #content4, 
+#content5, #content6, #content7, #content8, 
+#content9, #content10, #content11, #content12 {
+  text-align: left;
+}
+
+#content1 h3, #content2 h3, #content3 h3, #content4 h3, 
+#content5 h3, #content6 h3, #content7 h3, #content8 h3, 
+#content9 h3, #content10 h3, #content11 h3, #content12 h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#content1 p, #content2 p, #content3 p, #content4 p, 
+#content5 p, #content6 p, #content7 p, #content8 p, 
+#content9 p, #content10 p, #content11 p, #content12 p {
+  font-size: 0.9em;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* Unique background colors */
+#box1 { background-color: #FF6B6B; }
+#box2 { background-color: #4ECDC4; }
+#box3 { background-color: #45B7D1; }
+#box4 { background-color: #045D5D; }
+#box5 { background-color: #e9bb04; }
+#box6 { background-color: #b41d1d; }
+#box7 { background-color: #9B59B6; }
+#box8 { background-color: #3498DB; }
+#box9 { background-color: #E74C3C; }
+#box10 { background-color: #2ECC71; }
+#box11 { background-color: #be9a06; }
+#box12 { background-color: #E67E22; }
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  h2 {
+      font-size: 2em;
+  }
+
+  #box1, #box2, #box3, #box4, #box5, #box6, 
+  #box7, #box8, #box9, #box10, #box11, #box12 {
+      padding: 15px;
+  }
+
+  #box1 img, #box2 img, #box3 img, #box4 img, 
+  #box5 img, #box6 img, #box7 img, #box8 img, 
+  #box9 img, #box10 img, #box11 img, #box12 img {
+      width: 40px;
+      height: 40px;
+  }
+}
+
+
+
+/* ---------------Hostel Facilities---------- */
+
+#hostel-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: left;
+  background-color: #f5deb3; /* Added background color */
+  border-radius: 1rem;
+}
+
+#hostel-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 2.5em;
+  color: #333;
+  padding-top: 40px; /* Added padding to offset background */
+}
+
+.hostel-paragraph {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #444;
+  line-height: 1.6;
+}
+
+.hostel-paragraph:last-child {
+  padding-bottom: 40px; /* Added padding to last paragraph */
+}
+
+.hostel-paragraph::before {
+  content: "➜";
+  position: absolute;
+  left: 0;
+  color: var(--main-color-one);
+  font-size: 1.2em;
+  font-size: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  #hostel-section h2 {
+      font-size: 2em;
+      padding-top: 20px;
+  }
+
+  #hostel-section {
+      padding: 0 15px;
+  }
+
+  .hostel-paragraph {
+      font-size: 1em;
+      padding-left: 25px;
+  }
+
+  .hostel-paragraph:last-child {
+      padding-bottom: 20px;
+  }
+}
