@@ -36,10 +36,11 @@
   
   ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
   }
   
   ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(125deg, #ffc44e 0%, #764af1 100%);
+    background-image: linear-gradient(125deg, #ffc44e 0%, #045D5D 100%);
     border-radius: 10px;
   }
 
@@ -1170,5 +1171,119 @@ h2 {
 
   .hostel-paragraph:last-child {
       padding-bottom: 20px;
+  }
+}
+
+
+
+
+/* ----------Table------------ */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.university-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  min-width: 900px;
+}
+
+.table-head {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #ddd;
+}
+
+.table-row {
+  border: 1px solid #ddd;
+}
+
+.table-cell {
+  padding: 12px;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.table-cell:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.table-row:hover .table-cell {
+  background-color:var(--main-color-one);
+  border: 1px solid #ddd;
+  color: #fff;
+  /* transition: background-color 0.9s; */
+  transition: all 0.4s ease-in-out;
+}
+
+.table-head:nth-child(odd) {
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+}
+
+/* Responsive styling */
+@media screen and (max-width: 1200px) {
+  .university-table {
+      min-width: 800px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .university-table {
+      min-width: 700px;
+  }
+  .table-head, .table-cell {
+      font-size: 14px;
+      padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .university-table {
+      min-width: 600px;
+  }
+  .table-head, .table-cell {
+      font-size: 12px;
+      padding: 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .university-table {
+      min-width: 500px;
+  }
+  .table-head, .table-cell {
+      font-size: 10px;
+      padding: 6px;
+  }
+  .table-head {
+      font-size: 11px;
+  }
+  .table-cell {
+      font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .university-table {
+      min-width: 400px;
+  }
+  .table-head, .table-cell {
+      font-size: 10px;
+      padding: 5px;
+  }
+  .table-head {
+      font-size: 11px;
+  }
+  .table-cell {
+      font-size: 9px;
   }
 }
