@@ -3575,7 +3575,7 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
   cursor: pointer;
   border-radius: 20px;
   position: relative;
-  height: 210px;
+  min-height: 210px;
   z-index: 1;
   margin-bottom: 30px;
 }
@@ -5998,7 +5998,7 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
   width: 100%;
   margin: 0;
   font-size: 16px;
-  padding: 15px 20px 15px 60px;
+  /* padding: 15px 20px 15px 60px; */
   color: #6a6a6a;
   -webkit-transition: all linear 0.2s;
   transition: all linear 0.2s;
@@ -6025,7 +6025,9 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
 }
 .form .form-element .nice-select .list .option {
   background-color: #fff !important;
+  /* padding-right: 20px !important; */
   color: #6a6a6a;
+  
 }
 .form .form-element .nice-select .list .option.disabled {
   display: none;
@@ -6237,7 +6239,7 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
 .single-course-item .hover-option .contact .tag {
   display: block;
   font-family: var(--body-font);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: var(--paragraph-color);
@@ -6321,7 +6323,7 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
   font-size: 16px;
   font-weight: 500;
   color: #000000;
-  margin-left: 15px;
+  margin-left: 25px;
   margin-bottom: 0;
 }
 .single-course-item:hover .hover-option {
@@ -6368,10 +6370,10 @@ blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-sty
 .filter-wrapper .form .nice-select .list.selected,
 .filter-wrapper .form .nice-select .list.focus {
   color: var(--heading-color) !important;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
   padding-left: 12px;
-  padding-right: 12px;
+  padding-right: 17px;
 }
 .filter-wrapper .form .btn-wrap {
   margin-top: 13px;
@@ -7126,6 +7128,7 @@ label[for="wp-comment-cookies-consent"] {
 }
 .widget.footer-widget select option {
   color: var(--heading-color);
+  
 }
 .widget.footer-widget .widget-headline {
   color: #fff;
