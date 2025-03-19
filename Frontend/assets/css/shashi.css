@@ -11,14 +11,62 @@
 
 
 
-.shashi {
+/* .shashi {
     min-height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
-    transition: background-image 2s ease-in-out; /* Smooth transition */
+} */
+.shashi {
+    position: relative;
+    width: 100%;
+    /* height: 630px; */
+    min-height: 630px;
+    overflow: hidden;
 }
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0.6;
+    z-index: -1;  /* Initially, all slides will have the same z-index */
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 1; /* The active slide should be on top */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+
 
 
 /* .shashi {
@@ -57,6 +105,7 @@
     left: 50%;
     transform: translate(-50% , -50%);
     text-align: center;
+    z-index: 2;
 }
 .shashi .hero h1{
    font-weight: 700;
