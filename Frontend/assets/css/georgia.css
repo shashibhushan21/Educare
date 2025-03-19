@@ -178,8 +178,9 @@
   }
 
 
-  #main-container {
+  #main-containe {
     max-width: 1200px;
+    min-height: 200px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -187,7 +188,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-#main-container h1 {
+#main-containe h1 {
     text-align: center;
     color: var(--main-color-one);
     margin-bottom: 20px;

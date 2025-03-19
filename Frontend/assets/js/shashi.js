@@ -17,7 +17,7 @@ let currentIndex = 0;
 images.forEach((img, index) => {
     const slide = document.createElement('div');
     slide.classList.add('carousel-slide');
-    slide.style.backgroundImage = `linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(${img})`;
+    slide.style.backgroundImage = `linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)), url(${img})`;
 
 
     if (index === 0) {
@@ -44,3 +44,28 @@ function moveSlide(direction) {
     currentIndex = (currentIndex + direction + slides.length) % slides.length;
     slides[currentIndex].classList.add('active');
 }
+
+
+
+function DiffCountry(){
+    let imgBx = document.querySelectorAll(".imgBx");
+let contectBx = document.querySelectorAll(".contentBx");
+
+for (let i = 0; i < imgBx.length; i++) {
+    imgBx[i].addEventListener("mouseover", function () {
+        for (let j = 0; j < contectBx.length; j++) {
+            contectBx[j].className = 'contentBx';
+        }
+        document.getElementById(this.dataset.id).className = 'contentBx active';
+
+       
+        for (let j = 0; j < imgBx.length; j++) {
+            imgBx[j].className = 'imgBx';
+        }
+        this.className = 'imgBx active';
+    });
+
+}
+
+}
+DiffCountry();

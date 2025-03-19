@@ -44,7 +44,7 @@
     z-index: 1; /* The active slide should be on top */
 }
 
-button {
+#boton {
     position: absolute;
     top: 50%;
     z-index: 2;
